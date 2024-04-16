@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Navigation from './components/Navigation'
-import Counter from './components/Counter'
+import Profile from './components/Profile'
 
 export default class App extends Component {
   constructor(props) {
@@ -11,8 +11,8 @@ export default class App extends Component {
     return (
       <div>
        <Navigation />
-      <button onClick={()=> this.setState({show: !this.state.show})}>show counter</button>
-      { this.state.show ? <Counter /> : null }
+      <button onClick={()=> this.setState({show: !this.state.show})}>show profile</button>
+      { this.state.show ? <Profile /> : null }
       </div>
     )
   }
